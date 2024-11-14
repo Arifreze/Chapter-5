@@ -1,0 +1,21 @@
+import java.util.Scanner;// kita nak datangkan scanner
+
+public class KISmark{//class name nama kismark,access modifier dia public
+    public static void main(String[]args){//
+        int latenumber = 0;//declare latenumber pakai int sbb tu integer
+        float deductmarks = 0.3f;//declare deduct mark guna float sbb ada point
+        float missingKISmark = 0;//declare guna float sbb ada point
+        float balanceKISmark = 10;
+        Scanner Hadir = new Scanner(System.in);//bagi nama dekat scanner
+        System.out.print("Enter your latenumber:");//print out bende 
+        latenumber = Hadir.nextInt();//na bagi user enter bende
+        
+        if(latenumber > 3)//kalau nombor late lebih dri 3 dia ada,kalau kursng dri 3 dia tiada
+            
+            
+         missingKISmark = latenumber*deductmarks;//formula utk mark
+          System.out.println("Total KIS Mark :"+missingKISmark);//nk print out kismark
+          balanceKISmark = balanceKISmark -  missingKISmark;//formula utk balance kismark
+          System.out.println("balance KIS mark:"+balanceKISmark);//nk printt out balance kismark
+    }
+}
